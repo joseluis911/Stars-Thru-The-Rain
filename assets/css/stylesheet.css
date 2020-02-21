@@ -1,0 +1,235 @@
+body { font-family: Playfar Display, Verdana, Arial, sans-serif;
+      background-color: #330000;
+      font-size: 90%;
+}
+#wrapper {  background-color: #f5f2e6; 
+	        width: 90%;
+			margin: auto;
+            color: #6c4d10;
+} 
+h1, h2 { color: #003300; }
+header { background-image: url(images/header.jpg);
+         background-repeat: no-repeat; 
+		 background-size: cover;
+}
+h1 { text-align: center;
+      font-size: 250%;
+      padding: 5% 0;
+      font-family: Playfar Display, Verdana, Arial, sans-serif;  
+     text-shadow: 3px 3px 3px #F4E8BC;	
+}
+h2, h3 { text-align: center;
+    font-family: Josefin Sans, Playfar Display, Verdana, Arial, sans-serif;  	
+}
+
+nav { float: left;
+      width: 20%;
+	  font-size: 120%;
+      font-family: Playfair Display;
+}	  
+nav ul { list-style-type: none; }
+nav a { text-decoration: none;}
+nav a {text-shadow: 3px 3px 3px #F4E8BC;}
+nav a:link { color: #17346c; }
+nav a:visited { color: #003300; }
+nav a:hover { color: red; }
+    
+aside { float: right; 
+        width: 25%;
+		padding: 0 2.5%;
+}
+
+main { width: 50%;
+        padding-right: 2%;
+        margin-left: 20%;
+}
+    
+p.a {
+  font-family: "Playfair Display", Times, serif;
+    
+}
+
+p.b {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p.c {
+  text-align: center;
+}
+
+p.d {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-style: italic;
+}
+img { max-width: 100%; 
+      height: auto;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.center1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+footer { text-align: center;
+         font-size: 80%;
+		 font-style: italic;
+		 color: #003300;
+		 padding: 2.5%;
+	     clear: both; 
+}
+@media only screen and (max-width: 1024px) {
+          body { margin: 0; padding: 0; } 
+          #wrapper { width: auto; }
+          h1 { margin: 0; }
+		  nav { float: none;
+                width: auto;
+                margin-top: 0;	}
+ 	      nav ul { padding-left: 0;
+                   text-align: center; }
+          nav li { display: inline;
+                   margin: 0 2%; }
+          main { width: 60%;
+                   margin-left: 5%; }
+          aside { width: 30%;  }
+
+}
+@media only screen and (max-width: 768px) {
+		    h1 { font-size: 200%; }
+			main { margin: 0 5%;      
+                    width: auto;	}
+			nav ul, nav li { padding: 0; margin: 1% 0 0 0; }
+			nav a { display: inline-block;
+                    width: 5em;
+			        font-size: 120%;
+					text-align: center;
+					box-shadow: 2px 2px 2px #330000;
+					background-color: #FFFFCC; 
+					margin: 1%;
+					padding: 2.5%; 			}
+			aside { display: none; }		
+}
+header, main, nav, footer, figure, figcaption { display: block; }
+
+ul#sitemap {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul#sitemap ul {
+  padding-left: 1em;
+  list-style: none;
+}
+
+ul#sitemap li {
+  border-bottom: 1px solid #FFFFFF;
+}
+
+ul#sitemap li a:link, ul#sitemap li a:visited{
+  background-color: #CCCCCC;
+  display: block;
+  padding: 0.4em;
+  text-decoration: none;
+  color: #057FAC;
+}
+
+ul#sitemap li a:hover {
+  background-color: #999999;
+  color: #FFFFFF;
+}
+
+ul#sitemap li li a:link, ul#sitemap li li a:visited{
+  background-color: #FFFFFF;
+  display: block;
+  padding: 0.4em;
+}
+
+ul#sitemap li li a:hover {
+  background-color: #FFFFFF;
+  color: #057FAC;
+}
+#mapsite{
+	width: 95%;
+	margin-top:10px;
+	margin-left:20px;
+	float:center;
+}
+
+-------
+form {
+  border: 4px solid #f1f1f1;
+}
+
+.container {
+  padding: 20px;
+  background-color: #f5f2e6;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Add margins to the checkbox */
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4c9caf;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+______
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4c9caf;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}

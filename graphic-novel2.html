@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Stars Through the Rain - about</title>
+  <title>Stars Through the Rain</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
@@ -10,81 +11,26 @@
     <!-- CSS Files -->
     <link href="assets/css/material-kit.css?v=2.1.1" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  
-   
        <!--   Jquery JS   -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
       <!-- SweetAlert 2 https://sweetalert2.github.io/-->
       <script src="assets/js/plugins/sweetalert2.all.js"></script>
 
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Playfair Display, Josefin sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.bg-image {
-  /* The image used */
-  background-image: url("assets/images/Photographer.jpg");
-  
-  /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  
-  /* Full height */
-  height: 60%; 
-  
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* Position text in the middle of the page/image */
-.bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-  border: 3px solid #f1f1f1;
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
-}
-</style>
-
-
-
-
 
 </head>
-<body>
 
-<div class="bg-image"></div>
+  <body>
+    <div class="bg-image"></div>
+    <div class="bg-text">
+    <h2>Stars Through the Rain</h2>
+    <h1 style="font-size:50px">I am Miralda</h1>
+    </div>
 
-<div class="bg-text">
-  <h2>Stars Through the Rain</h2>
-  <h1 style="font-size:50px">I am Miralda</h1>
-</div>
-
-
-
-
-  
     <nav class="navbar navbar-color-on-scroll navbar-transparent bg-primary fixed-top  navbar-expand-lg  " color-on-scroll="100" id="sectionsNav">
         <div class="container">
           <div class="navbar-translate">
-            <img src="assets/images/logo.png" class="img-fluid" alt="Responsive image"> 
+            <a class="navbar-brand" href="index.html">
+              Stars Through the Rain </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
               <span class="sr-only">Toggle navigation</span>
               <span class="navbar-toggler-icon"></span>
@@ -96,8 +42,8 @@ body, html {
             <ul class="navbar-nav ml-auto">
                <li class="nav-item">
                 <a href="index.html" class="nav-link">
-                   Home
-                </a>
+                       Home
+                    </a>
               </li>
               <li class="nav-item">
                 <a href="book.html" class="nav-link" >
@@ -119,7 +65,7 @@ body, html {
                   Donate
                 </a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a href="about.html" class="nav-link">
                   About
                 </a>
@@ -132,13 +78,11 @@ body, html {
               <li class="nav-item">
                 <a href="#" class="nav-link">
                     <img src="assets/images/spain.png" class="img-fluid" alt="Responsive image">
-                    Español
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                     <img src="assets/images/us.png" class="img-fluid" alt="Responsive image">
-                    Inglés
                 </a>
               </li>
             </ul>
@@ -148,18 +92,158 @@ body, html {
       
             </div>
           </div>
-        </div>
+        </div>  
       </div>
+
+
+<!--gallery starts  -->
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Josefin Sans;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="assets/images/bg2.jpg"  style="width:90%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assets/images/bg3.jpg"  style="width:90%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assets/images/bg2.jpg"  style="width:90%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assets/images/bg3.jpg"  style="width:90%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+<!-- Gallery Ends -->
+
+
 
   <!--Content -->
 <div class="container-fluid text-center">    
   <div class="row content">
 
+      <!-- Cards -->
+    <div class="col-sm-2 sidenav">
+        <div class="row">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Card 1</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Do Something</a>
+                </div>
+              </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="card">
+                
+                <div class="card-body">
+                  <h5 class="card-title">Card 2</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Do Something</a>
+                </div>
+              </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="card">
+                
+                <div class="card-body">
+                  <h5 class="card-title">Card 3</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Do Something</a>
+                </div>
+              </div>
+        </div>
+        
+    </div>
+ 
+
     <!-- Center Grid -->
     <div class="col-sm-6 text-center"> 
         <div class="book">
 
-            <h1>Stars Through the Rain, book written by Miralda Reyes</h1>
+            <h3>Stars Through the Rain, book written by Miralda Reyes</h3>
             <p class="text-justify">"Although in recent years my life has been permeated by Doug's tragedy, I still enjoy the smell of the sea at night and the phosphorescence that appears when the water hits the stones. It looks like falling stars."
                 
             </p>
@@ -168,8 +252,8 @@ body, html {
             <hr>
             <img src="assets/images/mar.jpg" class="img-fluid" alt="Responsive image">
            
-
         </div>
+
         <br>
 
         <div class="growing text-center">
@@ -195,33 +279,14 @@ body, html {
                 <br>
             <p class="text-left font-weight-bolder "> <span class="font-italic">—Stars Through the Rain.—</span></p>
 
-             
-
         </div>
-        <br>
-        <form>
-            <h2>Stars Through the Rain Newsletter</h2>
-            <p>Sign up to our newsletter and stay in the loop. One artwork for free,
-             articles about relationships, self-help, love, and kindness!</p>
-            <div class="form-group">
-             
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
-            </div>
-            <div class="form-group">
-                
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email address">
-              </div>
-            
-              <div class="form-group">
-                
-                <button type="button" class="btn btn-primary btn-large" >Suscribe</input>
-            </div>
 
-          </form>
+        <br>
+        
       
     </div>
     <!-- Side Nav Right -->
-    <div class="col-sm-6 sidenav">
+    <div class="col-sm-4 sidenav">
       <div class="well">
         <h3>Based on a true story</h3>
         <p class="text-justify">Miralda arrived in Canada after fleeing from an economic disaster in her country, 
@@ -249,8 +314,6 @@ body, html {
 </div>
 
 
-<!-- Footer -->
-<!-- Footer -->
 <!-- Footer -->
 <footer class="footer footer-black footer-big">
     <div class="container">
@@ -309,10 +372,6 @@ body, html {
           </div>
 
           <div class="col-md-4">
-            <h5>CONTACT</h5>
-            <ul class="social-buttons">
-            <p>Get in touch with Miralda by using the form on the contact page, or send a email to xxxxxxx@youremail.com and she’ll get back to you promptly.</p> 
-
             <h5>Follow Us</h5>
             <ul class="social-buttons">
               <li>
@@ -355,6 +414,7 @@ body, html {
   </footer>
 
 
+    
 </script>
   <!--   Core JS Files   -->
   <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
