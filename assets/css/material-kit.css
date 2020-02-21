@@ -17,6 +17,12 @@
 
 /*     brand Colors              */
 
+
+
+
+
+
+
 .carousel.carousel-full-nagivation .left {
   cursor: url("../../img/arrow-left.png"), url("../../img/arrow-left.cur"), default !important;
 }
@@ -64,7 +70,7 @@ section {
 
 body {
   margin: 0;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", open sans, "Josefin San", "Playfair Display", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -468,7 +474,7 @@ section {
 
 body {
   margin: 0;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", "Playfair Display", "Josefin Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -939,7 +945,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", "open sans", monospace;
 }
 
 code {
@@ -4093,7 +4099,7 @@ tbody.collapse.show {
 
 .nav-link:hover,
 .nav-link:focus {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .nav-link.disabled {
@@ -5654,7 +5660,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", "Josefin sans-serif",sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5779,7 +5785,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", "Josefin sans-serif", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -10928,7 +10934,7 @@ legend {
 }
 
 .serif-font {
-  font-family: "Roboto Slab", "Times New Roman", serif;
+  font-family: "Roboto Slab", "Josefin sans-serif", serif;
 }
 
 * {
@@ -11909,7 +11915,7 @@ fieldset[disabled] .form-group.is-focused .form-check .form-check-label {
   height: 15px;
   width: 15px;
   border-radius: 100%;
-  background-color: #9c27b0;
+  background-color: #2785b0;
   -webkit-transform: scale3d(0, 0, 0);
   -moz-transform: scale3d(0, 0, 0);
   -o-transform: scale3d(0, 0, 0);
@@ -14978,7 +14984,7 @@ h6,
 .h2,
 .h3,
 .h4 {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", "Josefin sans-serif", "Josefin sans", sans-serif;
   font-weight: 300;
   line-height: 1.5em;
 }
@@ -15069,7 +15075,7 @@ small,
 .footer-big h4,
 .media .media-heading {
   font-weight: 700;
-  font-family: "Roboto Slab", "Times New Roman", serif;
+  font-family: "Josefin sans-serif", "Josefin sans","Roboto Slab", "Times New Roman", serif;
 }
 
 .title,
@@ -15097,7 +15103,7 @@ h2.title {
 .description,
 .card-description,
 .footer-big p {
-  color: #3C4858;
+  color: #fff;
 }
 
 .text-warning {
@@ -18077,7 +18083,7 @@ thead.thead-inverse th,
 }
 
 .media .media-heading small {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", "Josefin sans", "Josefin sans-serif",sans-serif;
 }
 
 .media .media-body {
